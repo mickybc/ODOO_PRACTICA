@@ -1,13 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuItems = document.querySelectorAll('.side-nav li');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuItems = document.querySelectorAll(".sidebar li");
+  const sections = document.querySelectorAll(".section");
 
   menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      // Remove 'active' class from all items
-      menuItems.forEach(i => i.classList.remove('active'));
+    item.addEventListener("click", () => {
+      // Quitar activos
+      menuItems.forEach(i => i.classList.remove("active"));
+      sections.forEach(s => s.classList.remove("active"));
 
-      // Add 'active' class to the clicked item
-      item.classList.add('active');
+      // Activar el clicado
+      item.classList.add("active");
+      document.getElementById(item.dataset.section).classList.add("active");
     });
   });
 });
