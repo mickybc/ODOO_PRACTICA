@@ -10,117 +10,285 @@
     </title>
 </head>
 <body>
-  <div class="app">
-    <!-- Menú lateral -->
-    <aside class="sidebar">
-      <ul>
-        <li data-section="fabricacion" class="active"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#999999"><path d="M159-120v-120h124L181-574q-27-15-44.5-44T119-680q0-50 35-85t85-35q39 0 69.5 22.5T351-720h128v-40q0-17 11.5-28.5T519-800q9 0 17.5 4t14.5 12l68-64q9-9 21.5-11.5T665-856l156 72q12 6 16.5 17.5T837-744q-6 12-17.5 15.5T797-730l-144-66-94 88v56l94 86 144-66q11-5 23-1t17 15q6 12 1 23t-17 17l-156 74q-12 6-24.5 3.5T619-512l-68-64q-6 6-14.5 11t-17.5 5q-17 0-28.5-11.5T479-600v-40H351q-3 8-6.5 15t-9.5 15l200 370h144v120H159Zm80-520q17 0 28.5-11.5T279-680q0-17-11.5-28.5T239-720q-17 0-28.5 11.5T199-680q0 17 11.5 28.5T239-640Zm126 400h78L271-560h-4l98 320Zm78 0Z"/></svg> Fabricación</li>
-     
-      </ul>
-    </aside>
-    
+    <div class="app">
+        <aside class="sidebar">
+            
+            <ul>
+                <li data-target="fabricacion" class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#999999"><path d="M159-120v-120h124L181-574q-27-15-44.5-44T119-680q0-50 35-85t85-35q39 0 69.5 22.5T351-720h128v-40q0-17 11.5-28.5T519-800q9 0 17.5 4t14.5 12l68-64q9-9 21.5-11.5T665-856l156 72q12 6 16.5 17.5T837-744q-6 12-17.5 15.5T797-730l-144-66-94 88v56l94 86 144-66q11-5 23-1t17 15q6 12 1 23t-17 17l-156 74q-12 6-24.5 3.5T619-512l-68-64q-6 6-14.5 11t-17.5 5q-17 0-28.5-11.5T479-600v-40H351q-3 8-6.5 15t-9.5 15l200 370h144v120H159Zm80-520q17 0 28.5-11.5T279-680q0-17-11.5-28.5T239-720q-17 0-28.5 11.5T199-680q0 17 11.5 28.5T239-640Zm126 400h78L271-560h-4l98 320Zm78 0Z"/></svg>
+                    Fabricación
+                </li>
+                <li data-target="facturacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#B7B7B7"><path d="M446.67-200.67h66.66v-40h53.34q14.16 0 23.75-9.58Q600-259.83 600-274v-126.67q0-14.16-9.58-23.75-9.59-9.58-23.75-9.58h-140v-60H600v-66.67h-86.67v-40h-66.66v40h-53.34q-14.16 0-23.75 9.59-9.58 9.58-9.58 23.75v126.66q0 14.17 9.58 23.75 9.59 9.59 23.75 9.59h140v60H360v66.66h86.67v40ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm300.66-574v-159.33H226.67v666.66h506.66V-654h-206ZM226.67-813.33V-654v-159.33 666.66-666.66Z"/></svg>
+                    Facturación
+                </li>
+            </ul>
+        </aside>
 
-    <!-- Contenido -->
-    <main>
-      <section id="general">
-        <h2>Operaciones</h2>
-        <div>
-           <span>Ordenes de trabajo</span>
-        <span><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#999999"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></span>
+        <main class="main-content">
+            <section id="fabricacion" class="content-section active">
+                
+                <div class="content-body">
+                    <h3>Operaciones</h3>
+                    <div class="feature-item">
+                        <span>Órdenes de trabajo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#999999"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </div>
+                    <p class="feature-description">
+                        Procese operaciones en centro de trabajo especificos
+                    </p>
 
-        </div>
-       
-        <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Procese operaciones en centro de trabajo especificos</label>
-           </div>
-          <h3>Taller</h3>
-          <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Gestione sus órdenes de trabajo desde la aplicación Taller</label>
-           </div>
-           <h3>Calidad</h3>
-           <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Añada controles de caluidad a sus órdenes de trabajo</label>
-           </div>
-           <h3>Subproductos</h3>
-           <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Producir productos residuales (A + B - > C + D)</label>
+                    <h4>Taller</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Gestione sus órdenes de trabajo desde la aplicación Taller</label>
+                    </div>
+
+                    <h4>Calidad</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="taller-app" checked>
+                        <label for="taller-app">Añada controles de calidad a sus órdenes de trabajo</label>
+                    </div>
+                    <h4>Subproductos</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="calidad-check" checked>
+                        <label for="calidad-check">Producir productos residuales (A + B -> C + D)</label>
+                    </div>
+
+                    <h4>Subcontratación</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Delegue parte del proceso de producción a subcontratistas</label>
+                    </div>
+
+                    
+                    <h4>Lector de Códigos de barras</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Procese órdenes de fabricación desde la aplicación Código de barras</label>
+                    </div>
+
+         <div class="settings-group">
+                 <div class="field">
+               <label for="storage-type">Nomenclatura de código de barras
+              </label>
+        <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">Default Nomenclature <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">Default GS1 Nomenclature</option>
+            </select>
           </div>
-          <h3>Subcontratación</h3>
-          <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Delegue parte del proceso de producción a subcontratistas</label>
           </div>
-          <h3>Lector de códigos de barras</h3>
-          <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Procese órdenes de fabricación desdee la aplicación Códigos de barras</label>
-          </div>
-          <div class="field-group">
-             <div class="field">
-              <label for="fuente">Nomenclatura de código de barras:</label>
-               <select id="fuente" name="fuente">
-                <option value="Verdana">Default GS1 Nomenclature</option>
-                   <option value="Forte" selected>Default Nomenclature</option>
-               </select>
             </div>
-         </div>
-        
-          <p><a href="">&#129138; Configurar códigos de barras de productos</a></p>
-           <h3>Desbloquear órdenes de fabricación</h3>
-           <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">permitir a los usuariops de fabricación modificar las cantidades a consumir sin aprobación previa</label>
+                    <h4>Desbloquear órdenes de fabricación
+                   </h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Permitir a los usuarios de fabricación modificar las cantidades a consumir sin aprobación previa</label>
+                    </div>
+                     <h4>Informe de asignación para órdenes de fabricación</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Vea y asigne cantidades de producción a los pedidos de clientes o otras órdenes de fabricación</label>
+                    </div>
+
+                   
+
+                    <p class="note">
+                        <a href="#">&#129138; Configurar códigos de barras de productos</a>
+                    </p>
+
+                    <hr class="divider">
+                    <h3>Planificación</h3>
+                     <h4>Plan maestro de producción</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Planificar órdenes de fabricación o pedidos de compra basados en pronósticos</label>
+                    </div>
+
+                       <h4>Plazo de seguridad</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Planifique antes las órdenes de fabricación para evitar retrasos</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="facturacion" class="content-section">
+                <div class="header">
+                    <h2>Localización fiscal</h2>
+                    
+                </div>
+                <div class="content-body">
+                 
+                    <h4>Localización fiscal</h4>
+                    <p>Impuestos, posiciones fiscales, plan contable y declaraciones legales de su país</p>
+                    <div class="feature-item">
+                        <span>Reportes de ingresos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#999999"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </div>
+                    <p class="feature-description">
+                        Analiza tus ventas y pagos de manera detallada.
+                    </p>
+                </div>
+                 <div class="settings-group">
+                 <div class="field">
+               <label for="storage-type">Paquete
+              </label>
+        <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">es España - PyMES (2008) <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">es España - Entidades sin ánimo de lucro (2025)</option>
+                <option value="maildir">es España - Islas Canarias - PGCE Entidades sin ánimo de lucro (2025)</option>
+                <option value="maildir">es España - Islas Canarias - Completo (2025)</option>
+                <option value="maildir">es España - Cooperativas - Completo (2025)</option>
+                <option value="maildir">es España - Cooperativas - PyMES (2025)</option>
+               
+            </select>
           </div>
-           <h3>Informe de asignación para órdenes de fabricación</h3>
-           <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Vea y asigne cantidades de producción a los pedidos de clientes o otras órdenes de fabricación</label>
           </div>
-         
-        
+            </div>
+              <div class="header">
+                    <h3>Impuestos</h3>
+                    
+                </div>
+                <div class="content-body">
+                 
+                    <h4>Impuestos</h4>
+                    <p>Impuestos aplicados por defecto al crear nuevos productos</p>
+                  
+                </div>
+                 <div class="settings-group">
+                 <div class="field">
+               <label for="storage-type">Impuesto de venta
+              </label>
+        <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">21% G     Bienes <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">21% S     Servicios</option>
+                <option value="maildir">0% EU S     Servivios</option>
+                <option value="maildir">0% S NS     Servicios</option>
+                <option value="maildir">0% S OSS EXEMPT     Servicios</option>
+                <option value="maildir">0% G NS     Bienes</option>
+                <option value="maildir">0% S OSS EXEMPT     Bienes</option>
+                <option value="maildir">0% EX S Servicios</option>
+               
+            </select>
+          </div>
+          </div>
+            </div>
+                  <div class="settings-group">
+                 <div class="field">
+               <label for="storage-type">Impuesto de compra
+              </label>
+        <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">21% G     Bienes <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">21% S     Servicios</option>
+                <option value="maildir">21% EU S     Servivios</option>
+                <option value="maildir">21% EU G    Bienes</option>
+                <option value="maildir">21% EU IG    Bienes</option>
+                <option value="maildir">21% EX G    Bienes</option>
+                <option value="maildir">21% EX IG    Bienes</option>
+                <option value="maildir">4% EX S Servicios</option>
+               
+            </select>
+          </div>
+          </div>
+            </div>
+             <h4>Venta a distancias intracomunitaria de la UE</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Aplique el IVA del país de la Unión Europea al que se entregan productos y servicios.</label>
+                    </div>
+                    <h4>Criterio de caja</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Permita configurar impuestos con criterio de caja</label>
+                    </div>
+                     <h4>Método de redondeo</h4>
+                     <p>Cómo se calcula el importe total de impuestos en pedidos y facturas</p>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Redondear por línea</label>
+                        
+                    </div>
+                    <div class="checkbox-container">
+                       
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Redondear globalmente</label>
+                    </div>
+                     <h4>Verificar NIFs</h4>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Verificar NIFs con el servicio europeo VIES</label>
+                    </div>
+                     <h4>Pais fiscal</h4>
+                    <p>País de origen de su contabilidad</p>
+                    <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">España <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">Alemania</option>
+                <option value="maildir">Andorra</option>
+                <option value="maildir">Austria</option>
+                <option value="maildir">Belgica</option>
+                <option value="maildir">Chipre</option>
+                <option value="maildir">Croacia</option>
+                <option value="maildir">Dinamarca</option>
+                 <option value="maildir">España</option>
+                 <option value="maildir">Finlandia</option>
+                  <option value="maildir">Francia</option>
+                   <option value="maildir">Gibaltrar</option>  
+            </select>
 
-          
-     
+                <div class="header">
+                    <h3>Monedas</h3>
+                    
+                </div>
+                <div class="content-body">
+                 
+                    <h4>Moneda principal</h4>
+                    <p>Moneda principal de su compañía
+                  
+                </div>
+                 <div class="settings-group">
+                 <div class="field">
+               <label for="storage-type">Moneda
+              </label>
+        <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">EUR<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">EUR</option>
+               
+               
+            </select>
+          </div>
+          </div>
+            </div>
+            </section>
+        </main>
 
+        <aside class="info-panel" id="infoPanel">
+            <button class="close-button" id="closePanel">&times;</button>
+            <div class="panel-content">
+                <h3>Información detallada</h3>
+                <p>Haz clic en los iconos de ayuda (i) para ver más información.</p>
+            </div>
+        </aside>
+    </div>
 
-      </section>
-      <hr class="divider">
-      <section id="planificacion">
-           <h2>Planificación</h2>
-        <div>
-           <span>Plan maestro de producción</span>
-        <span><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#999999"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></span>
-
-        </div>
-       
-        <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Planificar órdeenes de fabricación o pedidos de compra basados en pronósticos</label>
-           </div>
-           <div>
-           <span>Plazo de seguridad</span>
-        <span><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#999999"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></span>
-
-        </div>
-       
-        <div class="checkbox">
-          <input type="checkbox" id="inicio" checked>
-          <label for="inicio">Planifique antes las órdenes de fabricación para evitar retrasos</label>
-           </div>
-          
-      </section>
-      
-
-   
-     
-    </main>
- 
-
-   
     
 </body>
 </html>
