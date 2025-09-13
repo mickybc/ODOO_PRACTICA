@@ -78,7 +78,7 @@ body {
 .content-section {
   display: none;
   opacity: 0;
-  height: 2000px;
+  height: 4000px;
  
 
   &.active {

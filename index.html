@@ -270,15 +270,122 @@
                 <option value="mbox">EUR<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
                </svg></option>
-                <option value="maildir">EUR</option>
-               
-               
+                <option value="maildir">EUR</option>   
             </select>
           </div>
           </div>
             </div>
+            <div class="header">
+                    <h3>Facturas de cliente</h3>
+                    
+                </div>
+                <div class="content-body">
+                 <h4>Correo postal</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Envíe facturas y seguimientos de pagos por correo postal</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Imprimir en color</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Imprimir ambos lados</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">Añadir una página de portada</label>
+                    </div>
+                     <p class="note">
+                        <a href="#">&#129138; Gestionar servicios y comprar créditos</a>
+                    </p>
+                     <p class="note">
+                        <a href="#">&#129138; Ver mis servicios</a>
+                    </p>
+                    <h4>Redondeo de efectivo</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Defina la unidad monetaria más pequeña de la moneda que se utilizará para el pago.</label>
+                    </div>
+                    <h4>Encoterm por defecto</h4>
+                    <p>Encoterm por defectode su empresa</p>
+                     <div class="select-wrapper">
+            <select id="storage-type" name="storage-type">
+                <option value="mbox">[EXW] ENTREGA EN FABRICA<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+               </svg></option>
+                <option value="maildir">[FCA] FRANCOP TRANSPORTISTA</option>
+                <option value="maildir">[FAS] FRANCO AL COSTADO DEL BUQUE</option> 
+                <option value="maildir">[FOB] GRATIS A BORDO</option> 
+                <option value="maildir">[CFR] COSTE E FLETE </option> 
+                <option value="maildir">[CIF] COSTE, SEGURO Y FLETE </option> 
+                <option value="maildir">[CPT] TRANSPORTE PAGADO HASTA</option>  
+                <option value="maildir">[CIP] TRANSPORTE Y SEGUROS PAGADOS HASTA</option>   
+            </select>
+          </div>
+           <h4>Términos y condiciones por defecto</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Añada sus términos y condiciones al final de sus facturas, pedidos o presupuestos</label>
+                    </div>
+                     <h4>Importe total de una factura con letra</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Muestre el importe total de una factura con letra</label>
+                    </div>
+                     <h4>Firmante autorizado en la factura</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Para mejorar la autenticidad, añada una firma a sus facturas</label>
+                    </div>
+                       <h4>Direcciones de clientes</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Seleccione direcciones de factura y entrega específicas</label>
+                    </div>
+                       <h4>Intrastat</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                           Recolecte información y produzca estadísticas de la negociación de bienes en Europa con intrastat.</label>
+                    </div>
+                       <h4>Recibo de venta</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                          Activar para crear un recibo de venta</label>
+                    </div>
+                         <h4>Crédito concedido de ventas</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                          Active alertas al crear facturas y pedidos de venta para contactos con un importe total por cobrar que exceden un límite. Establezca un valor superior a 0,0 para activar una comprobación del crédito concedido</label>
+                    </div>
+                         <h4>Impuestos en la moneda de la compañía</h4>
+                   <div class="checkbox-container">
+                        <input type="checkbox" id="proceso-especifico" checked>
+                        <label for="proceso-especifico">
+                         En las facturas también se mostrarán los impuestos en la moneda local</label>
+                    </div>
+                    
+                  
+                </div>
             </section>
         </main>
+
+
+
+
+
+
+
+
 
         <aside class="info-panel" id="infoPanel">
             <button class="close-button" id="closePanel">&times;</button>
